@@ -29,9 +29,6 @@
  */
 #  define DEVRANDOM "/dev/urandom", "/dev/random", "/dev/hwrng", "/dev/srandom"
 #  if defined(__linux) && !defined(__ANDROID__)
-#   ifndef DEVRANDOM_WAIT
-#    define DEVRANDOM_WAIT   "/dev/random"
-#   endif
 /*
  * Linux kernels 4.8 and later changes how their random device works and there
  * is no reliable way to tell that /dev/urandom has been seeded -- getentropy(2)
